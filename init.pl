@@ -67,5 +67,5 @@ close( $fh_git_config_tmp );
 copy( $f_git_config_tmp, $f_git_config );
 
 
-print( "Finished successfully.\n" );
+print( "Finished successfully.\n\n" );
 1;
