@@ -10,7 +10,7 @@ my $cwd = $FindBin::Bin;
 my $enc = "UTF-8";
 
 # Gitflow.
-print( "Initalizing gitflow configuration.\n" );
+print( "\nInitalizing gitflow configuration.\n" );
 
 my $f_git_config     = "$cwd/.git/config";
 my $f_git_config_tmp = "$cwd/.git/config_tmp_12345678901";
