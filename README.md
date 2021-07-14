@@ -12,7 +12,7 @@ use warnings;
 
 use FindBin;
 
-my $cwd        = $FindBin::Bin;
+my $cwd = $FindBin::Bin;
 
 # Gitflow.
 my $gitflow   = "gitflow-init";
