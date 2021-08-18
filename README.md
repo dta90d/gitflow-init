@@ -52,7 +52,7 @@ unless ( -f "$f_gitignore" and `grep "$gitflow/" $f_gitignore` )
 }
 
 # Success.
-print( "GITFLOW end.\n" )
+print( "GITFLOW end.\n" );
 
 1;
 ```
