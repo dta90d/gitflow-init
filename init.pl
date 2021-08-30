@@ -57,7 +57,7 @@ open( my $fh_git_config_tmp, ">>:encoding( $enc )", $f_git_config_tmp );
 # Delete existing gitflow config.
 # Also find out if the master branch is configured. If not, add it later.
 my $b_next = 0;
-my $b_master = 0
+my $b_master = 0;
 while ( my $line = <$fh_git_config> )
 {
     chomp $line;
@@ -80,19 +80,19 @@ undef $b_next;
 close( $fh_git_config );
 
 # Add new gitflow config.
-print_lines( $fh_git_config_tmp, @gitflow_config )
+print_lines( $fh_git_config_tmp, @gitflow_config );
 
 # Add master branch configuration if not present.
 unless ( $b_master )
 {
-    print_lines( $fh_git_config_tmp, @master_config )
+    print_lines( $fh_git_config_tmp, @master_config );
 }
 
 close( $fh_git_config_tmp );
 
 # Copy tmp config to real one.
 copy( $f_git_config_tmp, $f_git_config );
-unlink( $f_git_config_tmp )
+unlink( $f_git_config_tmp );
 
 
 print( "Finished successfully.\n\n" );
