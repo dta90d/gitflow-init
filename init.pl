@@ -79,14 +79,14 @@ while ( my $line = <$fh_git_config> )
 undef $b_next;
 close( $fh_git_config );
 
-# Add new gitflow config.
-print_lines( $fh_git_config_tmp, @gitflow_config );
-
 # Add master branch configuration if not present.
 unless ( $b_master )
 {
     print_lines( $fh_git_config_tmp, @master_config );
 }
+
+# Add new gitflow config.
+print_lines( $fh_git_config_tmp, @gitflow_config );
 
 close( $fh_git_config_tmp );
 
