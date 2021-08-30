@@ -21,7 +21,7 @@ print( "\nInitalizing gitflow configuration.\n" );
 `git config gitflow.prefix.versiontag v`;
 `git config gitflow.path.hooks $cwd/.git/hooks`;
 
-`cd $cwd && git checkout -t origin/master`
+`cd $cwd && git checkout -t origin/master`;
 
 print( "Finished successfully.\n\n" );
 1;
